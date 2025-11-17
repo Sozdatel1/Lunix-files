@@ -17,4 +17,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: linux-executable
-          path: dist/ваш_скрипт
+          path: dist/Движок
