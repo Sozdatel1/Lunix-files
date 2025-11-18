@@ -12,9 +12,9 @@ jobs:
       - name: Install PyInstaller
         run: pip install pyinstaller
       - name: Build executable
-        run: pyinstaller --onefile Движок.py
+        run: pyinstaller --onefile Engine.py
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: linux-executable
-          path: ./dist/Движок
+          path: ./dist/Engine
