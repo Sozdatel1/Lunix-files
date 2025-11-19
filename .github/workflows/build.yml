@@ -12,9 +12,9 @@ jobs:
       - name: Install PyInstaller
         run: pip install pyinstaller
       - name: Build executable
-        run: pyinstaller --onefile Engine.py
+        run: pyinstaller --onefile cutechess.exe
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: linux-executable
-          path: ./dist/Engine
+          path: ./dist/cutechess
